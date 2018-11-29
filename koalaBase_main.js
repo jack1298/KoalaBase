@@ -68,7 +68,7 @@ const finished = buttons.length - 1;
 //Question 1: 
 
 buttons[0].addEventListener("click", function(){
-	alert("test");
+	//alert("test");
 	/*
 		*Answer was male
 		*Move koala up the tree to the given location
@@ -79,10 +79,10 @@ buttons[0].addEventListener("click", function(){
 		*remove koalas from list
 	*/
 
-	alert("the male button was pressed");
+	//alert("the male button was pressed");
 
-	ctx.translate(600,700);
-    ctx.drawImage(koala,0.1,0.1);
+	ctx.translate(0,0);
+    ctx.drawImage(koala,10,10, 10, 10);
         //ctx.restore();
 
 	for (var i = koalaArr.length - 1; i >= 0; i--) {
@@ -96,9 +96,24 @@ buttons[0].addEventListener("click", function(){
 
 buttons[Q1_F].addEventListener("click", function(){
 	//alert the female button was pressed 
+	ctx.translate(100,100);
+    ctx.drawImage(koala,0.1,0.1);
 });
 
 //Question 2: 
+
+buttons[2].addEventListener("click", function(){
+	//alert the female button was pressed 
+	ctx.translate(1000,250);
+    ctx.drawImage(koala,0.1,0.1);
+});
+
+buttons[3].addEventListener("click", function(){
+	//alert the female button was pressed 
+
+	ctx.translate(300,400);
+    ctx.drawImage(koala,0.1,0.1);
+});
 
 //finish button pressed 
 buttons[finished].addEventListener("click", function(){
