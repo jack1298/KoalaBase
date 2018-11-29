@@ -82,7 +82,7 @@ buttons[0].addEventListener("click", function(){
 	alert("the male button was pressed");
 
 	ctx.translate(600,700);
-        ctx.drawImage(koala,1,1);
+    ctx.drawImage(koala,0.1,0.1);
         //ctx.restore();
 
 	for (var i = koalaArr.length - 1; i >= 0; i--) {
