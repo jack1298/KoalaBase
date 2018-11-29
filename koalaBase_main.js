@@ -50,6 +50,7 @@ var koalaArr = [k1, k2, k3, k4];
 
 //Buttons
 var buttons = document.getElementsByTagName("button");
+var koala = document.getElementById("koala");
 
 //locations of button answers in the button array
 const Q1_M = 0;
@@ -66,7 +67,31 @@ const finished = buttons.length - 1;
 //===================LOGIC========================
 //Question 1: 
 
-buttons[0].addEventListener("click", function(){alert("test");});
+buttons[0].addEventListener("click", function(){
+	alert("test");
+	/*
+		*Answer was male
+		*Move koala up the tree to the given location
+
+		*enable next question
+		*disable next question
+
+		*remove koalas from list
+	*/
+
+	alert("the male button was pressed");
+
+	ctx.translate(600,700);
+        ctx.drawImage(koala,1,1);
+        //ctx.restore();
+
+	for (var i = koalaArr.length - 1; i >= 0; i--) {
+		if (koalaArr[i].gender == "female") {
+			console.log(koalaArr[i].name + "removed");
+			koalaArr[i].removed = "true";
+		}
+	}
+});
 
 
 buttons[Q1_F].addEventListener("click", function(){

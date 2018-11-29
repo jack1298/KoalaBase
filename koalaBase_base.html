@@ -3,12 +3,14 @@
 <head>
 	<title></title>
     <link rel="stylesheet" type="text/css" href="KoalaBase_cover.css">
-    <script src="koalaBase_main.js"></script>
+    
 </head>
 <body>
 	<canvas id='Tree' width="1000" height="1000" style="border:dashed 2px #ccc;">
 
     </canvas>
+
+    <img src="images/koala.png" width="10" height="10" id="koala">
 
     <p><b>What gender are you?<b><br>
     <button type="button" value="male" name="male">Male</button>
@@ -58,18 +60,17 @@
 
 
 
-        ctx.fillStyle="blue";
-        ctx.fillRect(0,0,100,100);
-        ctx.save();
+        //ctx.fillStyle="blue";
+        //ctx.fillRect(0,0,100,100);
+        //ctx.save();
 
-        ctx.translate(500,800);
-        ctx.fillStyle="blue";
-        ctx.fillRect(0,0,100,100)
-        ctx.restore();
+        
 
 
 
 
 </script>
+
+<script src="koalaBase_main.js"></script>
 </body>
 </html>
