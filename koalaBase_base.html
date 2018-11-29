@@ -6,8 +6,70 @@
     <script src="koalaBase_main.js"></script>
 </head>
 <body>
+	<canvas id='Tree' width="1000" height="1000" style="border:dashed 2px #ccc;">
+
+    </canvas>
+
     <p><b>What gender are you?<b><br>
     <button type="button" value="male" name="male">Male</button>
     <button type="button" value="female" name="female">Female</button>
+
+
+    <script>
+
+        var canvas=document.getElementById('Tree');
+        var ctx= canvas.getContext('2d');
+
+        ctx.beginPath();
+        angle=-Math.PI;
+        length=100;
+
+        ctx.lineWidth=12;
+        startx=500;
+        starty=900;
+        ctx.moveTo(startx,starty);
+        ctx.lineTo(500,800);
+        ctx.lineTo(500+length * Math.cos(angle),700+length * Math.sin(angle));
+        ctx.moveTo(500,800);
+        ctx.lineTo(600+length * Math.sin(angle),700+length * Math.cos(angle));
+        ctx.moveTo(500,800);
+        ctx.lineTo(500+length * Math.sin(angle),700+length * Math.cos(angle));
+
+
+        ctx.lineTo(500+length * Math.cos(angle),500+length * Math.sin(angle));
+        ctx.moveTo(500,600);
+        ctx.lineTo(600+length * Math.sin(angle),600+length * Math.cos(angle));
+        ctx.moveTo(500,600);
+        ctx.lineTo(500+length * Math.sin(angle),600+length * Math.cos(angle));
+
+        ctx.lineTo(500+length * Math.cos(angle),400+length * Math.sin(angle));
+        ctx.moveTo(500,500);
+        ctx.lineTo(600+length * Math.sin(angle),500+length * Math.cos(angle));
+        ctx.moveTo(500,500);
+        ctx.lineTo(500+length * Math.sin(angle),500+length * Math.cos(angle));
+
+
+
+
+
+
+        ctx.strokeStyle= "green";
+        ctx.stroke();
+
+
+
+        ctx.fillStyle="blue";
+        ctx.fillRect(0,0,100,100);
+        ctx.save();
+
+        ctx.translate(500,800);
+        ctx.fillStyle="blue";
+        ctx.fillRect(0,0,100,100)
+        ctx.restore();
+
+
+
+
+</script>
 </body>
 </html>

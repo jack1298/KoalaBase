@@ -8,7 +8,7 @@ var k1 = {
 	gender: "Male",
 	found: "Tree",
 	fwc: "false", //found with children
-	dead: "false"
+	dead: "false",
 	removed: "false"
 };
 
@@ -18,7 +18,7 @@ var k2 = {
 	gender: "Female",
 	found: "Tree",
 	fwc: "true", //found with children
-	dead: "false"
+	dead: "false",
 	removed: "false"
 };
 
@@ -28,7 +28,7 @@ var k3 = {
 	gender: "Male",
 	found: "Tree",
 	fwc: "false", //found with children
-	dead: "false"
+	dead: "false",
 	removed: "false"
 };
 
@@ -39,7 +39,7 @@ var k4 = {
 	gender: "Female",
 	found: "Tree",
 	fwc: "false", //found with children
-	dead: "false"
+	dead: "false",
 	removed: "false"
 };
 
@@ -61,42 +61,28 @@ const finished = buttons.length - 1;
 
 //more questions to come... maybe
 
+
+
 //===================LOGIC========================
 //Question 1: 
-buttons[Q1_M].addEventListener("click", function()) {
-	/*
-		*Answer was male
-		*Move koala up the tree to the given location
 
-		*enable next question
-		*disable next question
+buttons[0].addEventListener("click", function(){alert("test");});
 
-		*remove koalas from list
-	*/
-	alert("the male button was pressed");
 
-	for (var i = koalaArr.length - 1; i >= 0; i--) {
-		if (koalaArr[i].gender == "female") {
-			console.log(koalaArr[i].name + "removed");
-			koalaArr[i].removed = "true";
-
-		}
-	}
-}
-
-buttons[Q1_F].addEventListener("click", function()) {
-	alert the female button was pressed 
-}
+buttons[Q1_F].addEventListener("click", function(){
+	//alert the female button was pressed 
+});
 
 //Question 2: 
 
 //finish button pressed 
-buttons[finished].addEventListener("click", function()) {
+buttons[finished].addEventListener("click", function(){
 	/*
 		*call finished function
 		*check
 	*/
-}
+});
 
 
 //===================FUNCTIONS=====================
+
